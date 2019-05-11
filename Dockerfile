@@ -11,6 +11,7 @@ RUN apk --no-cache add \
     php7-mbstring \
     php7-mcrypt \
     php7-ldap \
+    php7-json \
     nginx \
     supervisor \
     curl \
