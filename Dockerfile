@@ -12,10 +12,12 @@ RUN apk --no-cache add \
     php7-mcrypt \
     php7-ldap \
     php7-json \
+    php7-openssl \
     nginx \
     supervisor \
     curl \
-    ca-certificates
+    ca-certificates \
+    && sed -i 's/;extension=php_openssl.dll/extension=php_openssl.dll/' /etc/php7/php.ini
 
 # Configure nginx
 COPY assets/nginx.conf /etc/nginx/nginx.conf
