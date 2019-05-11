@@ -27,8 +27,8 @@ COPY assets/php.ini /etc/php7/conf.d/z_custom_php.ini
 # Configure supervisord
 COPY assets/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-ENV LTB_PROJECT_VERSION 1.0
-ENV LTB_PROJECT_SHA256 2666e164f12f3e2f2bd08d7c580ac17d1474ec503e66d8025e0ffeeb4a1eab7e
+ENV LTB_PROJECT_VERSION 1.3
+ENV LTB_PROJECT_SHA256 e528e879c4f14cb13f0ea947b5205de7e555f55c14ca8d5533e81ef48d47c8a9
 
 # Download ltb-project self-service password
 RUN curl -s -L -o self-service-password.tar.gz https://github.com/ltb-project/self-service-password/archive/v1.3.tar.gz && \
